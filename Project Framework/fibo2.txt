@@ -1,0 +1,20 @@
+9
+START 	1	170	100	 "    " 
+SmplAssign 	2	109	199	sss	0	0	NULL	 "    "
+SmplAssign 	3	299	179	int	0	1	NULL	 "    "
+Conditional 	4	264	316	1	0	int	<	0	1000	NULL	 "    "
+END 	5	102	482	 "    "
+VarAssign 	6	611	155	temp	 " int " 	 "    "
+VarAssign 	7	594	266	int	 " int + sss " 	 "    "
+VarAssign 	8	594	406	sss	 " temp " 	 "    "
+WRITE 	9	815	127	 "int" 	1	1	 "  int" 	 "    " 
+9
+4	5	2
+6	7	0
+7	8	0
+8	4	0
+4	9	1
+9	6	0
+1	2	0
+2	3	0
+3	4	0

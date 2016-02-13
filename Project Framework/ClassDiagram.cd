@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="User Interface&#xD;&#xA;Library">
+    <Position X="9.325" Y="1.867" Height="0.706" Width="0.7" />
+  </Comment>
+  <Class Name="Action" Collapsed="true">
+    <Position X="4.75" Y="2.25" Width="1.5" />
+    <AssociationLine Name="pManager" Type="ApplicationManager" FixedFromPoint="true">
+      <Path>
+        <Point X="5.125" Y="2.25" />
+        <Point X="5.125" Y="1.062" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAACQAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Actions\Action.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="pManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AddSmplAssign" Collapsed="true">
+    <Position X="4.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQgAAAAAAQAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Actions\AddSmplAssign.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ApplicationManager" Collapsed="true">
+    <Position X="4.25" Y="0.5" Width="1.75" />
+    <AssociationLine Name="StatList" Type="Statement" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.25" Y="0.547" />
+        <Point X="2.062" Y="0.547" />
+        <Point X="2.062" Y="1.25" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="pOut" Type="Output" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.75" Y="1.062" />
+        <Point X="5.75" Y="1.969" />
+        <Point X="6.5" Y="1.969" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AZAAKAIAAIQAWAgAAAAAEAEAAUAAAAAAAAAAABAAAiA=</HashCode>
+      <FileName>ApplicationManager.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="pIn" />
+      <Field Name="pOut" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="StatList" />
+      <Field Name="ConnList" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Connector" Collapsed="true">
+    <Position X="3" Y="2.25" Width="1.5" />
+    <AssociationLine Name="SrcStat" Type="Statement" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3" Y="2.381" />
+        <Point X="2.562" Y="2.381" />
+        <Point X="2.562" Y="1.812" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAIAABAAAGAAAgAAAQAAAAAAAAAQAAABAAQACIEAEQA=</HashCode>
+      <FileName>Statements\Connector.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="SrcStat" />
+      <Field Name="DstStat" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Input" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABIAQAAAAAAEAABAAAEAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>GUI\Input.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="pWind" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Output" Collapsed="true">
+    <Position X="6.5" Y="1.75" Width="1.5" />
+    <AssociationLine Name="pWind" Type="window" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8" Y="2" />
+        <Point X="9.25" Y="2" />
+        <Point X="9.25" Y="1.812" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAADAAAUAAAAAAAAIAEAAAAAAQAQQAAAAIAgAgAA=</HashCode>
+      <FileName>GUI\Output.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="pWind" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SmplAssign" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAgIAAAQARRAAEACAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>Statements\SmplAssign.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statement" Collapsed="true">
+    <Position X="1.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAkgAAAAAABAACAAAAAAAAAIAACAAAAAI=</HashCode>
+      <FileName>Statements\Statement.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="window" Collapsed="true">
+    <Position X="8.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>lJITjJAVABAAoEAUADQAkCDGASAH6FKIAEtkaGIGQME=</HashCode>
+      <FileName>CMUgraphicsLib\CMUgraphics.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

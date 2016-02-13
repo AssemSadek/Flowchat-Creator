@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	double x;
+	double y;
+	double temp;
+	x = 0;
+	y = 1;
+	while(y < 1000)
+	{
+		cout<<y;
+		temp = y;
+		y = y+x;
+		x = temp;
+	}
+	return 0;
+	
+}

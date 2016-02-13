@@ -1,0 +1,25 @@
+11
+START 	1	71	94	 "  " 
+Conditional 	2	527	241	1	0	Counter	<	1	0	N	 "  "
+SmplAssign 	3	490	96	Counter	0	0	NULL	 "  "
+READ 	4	265	83	 "N" 	1	1	 " N" 	 " "
+SmplAssign 	5	704	90	Max	0	-1	NULL	 "  "
+VarAssign 	6	776	243	Counter	 " Counter + 1 " 	 "  "
+Conditional 	7	528	455	1	0	Max	<	1	0	Temp	 "  "
+VarAssign 	8	810	471	Max	 " Temp " 	 "  "
+WRITE 	9	150	307	 "Max" 	1	1	 " Max" 	 "  " 
+END 	10	202	475	 "  "
+READ 	11	1051	247	 "Temp" 	1	1	 " Temp" 	 " "
+12
+1	4	0
+4	3	0
+3	5	0
+5	2	0
+2	6	1
+7	8	1
+8	2	0
+7	2	2
+2	9	2
+9	10	0
+6	11	0
+11	7	0
